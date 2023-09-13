@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prueba.css">
+    <title>Document</title>
+</head>
+<body>
+  <h2>Crear Archivo XML</h2>
+  <main>
+    <div id="box">
+      <div></div>
+    </div>
+    <form action="" id="myForm">
+      <aside id="inputCont">
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name"  oninput="this.value=this.value.toUpperCase();" class="input">
+    
+        <label for="Notes">Notes:</label>
+        <input type="text" id="Notes" name="Notes"oninput="this.value=this.value.toUpperCase();" class="input">
+    
+        <label for="Tech-Notes">Tech Notes:</label>
+        <input type="text" class="input" id="Tech-Notes"  name="Tech-Notes" oninput="this.value=this.value.toUpperCase();">
+      </aside>
+
+      <aside id="selecciones1">
+        <label for="Category-1">Category 1:</label>
+        <select name="Category-1" id="Category-1" class="select">
+          <option value="---">---</option>
+          <option value="A continuacion">A continuacion</option>
+          <option value="ADVERTENCIA">ADVERTENCIA</option>
+          <option value="ALOCUCION">ALOCUCION</option>
+          <option value="AUTOPROMOCION">AUTOPROMOCION</option>
+          <option value="AVANCE">AVANCE</option>
+          <option value="CABEZOTE">CABEZOTE</option>
+          <option value="COMERCIAL">COMERCIAL</option>
+          <option value="CORTINILLA">CORTINILLA</option>
+          <option value="HIMNO">HIMNO</option>
+          <option value="INTERACTIVO">INTERACTIVO</option>
+          <option value="PECERA">PECERA</option>
+          <option value="PROGRAMA">PROGRAMA</option>
+          <option value="PROGRAMA_INTER">PROGRAMA_INTER</option>
+          <option value="MENSAJE INSTITUCIONAL">MENSAJE INSTITUCIONAL</option>
+          <option value="MENSAJE CIVICO">MENSAJE CIVICO</option>
+          <option value="PRUEBA">PRUEBA</option>
+          <option value="RESPONSABILIDAD SOCIAL">RESPONSABILIDAD SOCIAL</option>
+        </select>
+      
+  
+      <label for="Category-2">Category 2</label>
+        <select name="Category-2" id="Category-2"  class="select">
+          <option value="NUEVO">NUEVO</option>
+          <option value="REVISADO">REVISADO</option>
+          <option value="RECHAZADO">RECHAZADO</option>
+          <option value="SEGMENTADO">SEGMENTADO</option>
+        </select>
+  
+  
+      <label for="Category-3">Category 3</label>
+        <select name="Category-3" id="Category-3" class="select">
+          <option value="---">---</option>
+          <option value="ADULTO">ADULTO</option>
+          <option value="BEBIDAS ALCOHOLICAS">BEBIDAS ALCOHOLICAS</option>
+          <option value="DISPONIBLE">DISPONIBLE</option>
+          <option value="FIJO">FIJO</option>
+          <option value="POLITICO">POLITICO</option>
+          <option value="RESTRICCION INFANTIL">RESTRICCION INFANTIL</option>
+          <option value="PRESERVATIVOS">PRESERVATIVOS</option>
+          <option value="ROTATIVOS">ROTATIVOS</option>
+        </select>
+        </select>
+      </aside>
+
+      <aside id="inputCont">
+        <label for="Category-4">Category 4</label>
+        <select name="Category-4" id="Category-4" class="select">
+          <option value="---">---</option>
+          <option value="BORRAR">BORRAR</option>
+          <option value="ARCHIVADO">ARCHIVADO</option>
+          <option value="A DIVA">A DIVA</option>
+          <option value="VENCIDO">VENCIDO</option>
+          <option value="NO EMITIR">NO EMITIR</option>
+        </select>
+  
+      <label for="format">format</label>
+        <select name="format" id="format" class="select">
+          <option value="HD">HD</option>
+          <option value="SD">SD</option>
+        </select>
+    
+      <label for="CC">CC</label>
+        <select name="CC" id="CC" class="select">
+          <option value=" "></option>
+          <option value="CC_ONLINE">CC_ONLINE</option>
+          <option value="CC">CC</option>
+        </select>
+      </aside>
+
+      <aside class="inputCont">
+        <label>IN:
+          <input type="text" class="input" id="timeInput" name="Time" oninput="addSeparators('timeInput')" onkeypress="return event.charCode>=48 && event.charCode<=57" maxlength="11">
+        </label>
+          
+        <label>OUT:
+          <input type="text" class="input" id="timeOutput" name="timeOutput" oninput="addSeparators('timeOutput')" onkeypress="return event.charCode>=48 && event.charCode<=57" maxlength="11">
+        </label>
+      </aside>
+  
+      <aside id="inputCont" class="inputCont">
+        <div id="intimeContainer"></div>
+        <div id="OuttimeContainer"></div>
+      </aside>
+      <button type="button" id="crear" class="crear">+</button>
+      
+      <aside id="fechas">
+        <label for="Fecha-de-inicio">Fecha de inicio</label>
+        <input type="date" name="Fecha-de-inicio" id="Fecha-de-inicio" class="input">
+
+        <label for="warranty">Warranty</label>
+        <input type="date" name="warranty" id="warranty" class="input">
+      </aside>
+
+      
+  
+      <input type="submit" value="Crear Archivo XML" class="submit">
+    </form>
+  </main>
+  <script src="prueba.js"></script>
+  
+</body>
+</html>
